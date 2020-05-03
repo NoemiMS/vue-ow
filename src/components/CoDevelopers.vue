@@ -6,16 +6,23 @@
     </ul>
 </template>
 <script>
+import CoDeveloper from '@/components/CoDeveloper'
+
 export default {
      name: 'CoDevelopers',
+     components: {
+         CoDeveloper,
+     },
      data() {
          return {
-             user: [], //nuestro componente va a tener un valor inicial users, que es un array que comienza vacío
-
+             user: [], 
          } 
+     },
+     mounted () {
+         console.log('CoDeveloper mounted')
      }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="css" scoped>
 
 </style>
